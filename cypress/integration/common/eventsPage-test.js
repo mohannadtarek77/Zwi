@@ -57,7 +57,6 @@ describe("Test Cases for the Events Page", function() {
       .getElem(this.data.intensity.selector)
       .select(this.data.intensity.typeB.text);
     page.isTxtVisible(
-      this.data.intensity.selector,
       this.data.intensity.typeB.text
     );
 
@@ -73,7 +72,6 @@ describe("Test Cases for the Events Page", function() {
       .getElem(this.data.intensity.selector)
       .select(this.data.intensity.typeC.text);
     page.isTxtVisible(
-      this.data.intensity.selector,
       this.data.intensity.typeC.text
     );
     //   //   // asserting that the intensity selected is C
@@ -87,7 +85,6 @@ describe("Test Cases for the Events Page", function() {
       .getElem(this.data.intensity.selector)
       .select(this.data.intensity.typeD.text);
     page.isTxtVisible(
-      this.data.intensity.selector,
       this.data.intensity.typeD.text
     );
     //   //   // asserting that the intensity selected is D
@@ -101,7 +98,6 @@ describe("Test Cases for the Events Page", function() {
       .getElem(this.data.startTime.selector)
       .select(this.data.startTime.moriningText);
     page.isTxtVisible(
-      this.data.startTime.selector,
       this.data.startTime.moriningText
     );
     //   //   // asserting that the start Time selected is Morning
@@ -117,7 +113,6 @@ describe("Test Cases for the Events Page", function() {
       .getElem(this.data.startTime.selector)
       .select(this.data.startTime.afternoonText);
     page.isTxtVisible(
-      this.data.startTime.selector,
       this.data.startTime.afternoonText
     );
     //   //   // asserting that the start Time selected is Afternoon
@@ -133,7 +128,6 @@ describe("Test Cases for the Events Page", function() {
       .getElem(this.data.startTime.selector)
       .select(this.data.startTime.allStartTimes);
     page.isTxtVisible(
-      this.data.startTime.selector,
       this.data.startTime.allStartTimes
     );
     //   //   // asserting that the startTime selected is All Start Times
@@ -168,7 +162,6 @@ describe("Test Cases for the Events Page", function() {
 
     page.getElem(this.data.sport.selector).select(this.data.sport.type.cycling);
     page.isTxtVisible(
-      this.data.sport.label.selector,
       this.data.sport.label.cycling
     );
     //  asserting that the sport selected is cycling and the sport's label is cycling
@@ -184,13 +177,10 @@ describe("Test Cases for the Events Page", function() {
 
     //   //   // asserting that the intensity selected is E
 
-    page.getElem(this.data.intensity.typeE.labelSelector).should("be.visible");
-    //   //   // asserting that the icon of intensity E  is visible
     page
       .getElem(this.data.startTime.selector)
       .select(this.data.startTime.afternoonText);
     page.isTxtVisible(
-      this.data.startTime.selector,
       this.data.startTime.afternoonText
     );
     //   //   // asserting that the start Time selected is Afternoon
@@ -200,14 +190,13 @@ describe("Test Cases for the Events Page", function() {
     //   //   // asserting that the icon of start Time "PM"  is visible
     page.txtNotVisible(this.data.startTime.amText);
 
-    //   //   // asserting that the icon of start Time "AM"  is not visible
+      //   // asserting that the icon of start Time "AM"  is not visible
   });
   it("User selects an invalid combination of sport with an event, intensity,and time", function() {
     cy.visit(this.data.eventsURL);
 
     page.getElem(this.data.sport.selector).select(this.data.sport.type.cycling);
     page.isTxtVisible(
-      this.data.sport.label.selector,
       this.data.sport.label.cycling
     );
     //  asserting that the sport selected is cycling and the sport's label is cycling
@@ -215,7 +204,6 @@ describe("Test Cases for the Events Page", function() {
       .getElem(this.data.startTime.selector)
       .select(this.data.startTime.afternoonText);
     page.isTxtVisible(
-      this.data.startTime.selector,
       this.data.startTime.afternoonText
     );
     //   //   // asserting that the start Time selected is Afternoon
