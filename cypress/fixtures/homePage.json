@@ -1,0 +1,32 @@
+{
+  "url": "https://zwift.com/",
+  "eventsButton": {
+    "selector": ".znv-d-lg-flex > a[href='/events']",
+    "text": ""
+  },
+  "urlVisible": "https://zwift.com/",
+  "loginButton": {
+    "selector": "#znv-header-login-button",
+    "text": "Login"
+  },
+  "createAccountBtn": {
+    "selector": "#znv-header-register-button",
+    "text": "Create Account"
+  },
+  "zwiftLogo":{
+      "selector":"#znv-header-logo-link > .znv-d-none > svg"
+  },
+  "getStartedBtn":".znv-d-lg-flex > div > .znv-py-2_5",
+  "trainingBtn":".znv-d-lg-flex > [href='/training-plans']",
+  "trainingText":"Training",
+  "runBtn":".znv-d-lg-flex > [href='/run']",
+  "runText":"Run",
+  "offRoadBtn":".znv-d-lg-flex > [href='/offroad']",
+  "offRoadText":"Off-Road",
+  "shopBtn":".znv-px-lg-1_5 > .znv-d-lg-flex > [href='/shop']",
+  "shopText":"Shop",
+  "eventsBtn":".znv-d-lg-flex > [href='/events']",
+  "eventsText":"Events",
+  "supportBtn":".znv-d-lg-flex > [href='https://support.zwift.com/']",
+  "supportText":"Support"
+}

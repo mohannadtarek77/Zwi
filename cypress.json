@@ -1,0 +1,17 @@
+{
+  "baseUrl": "https://zwift.com/",
+  "viewportWidth": 1300,
+  "viewportHeight": 1000,
+  "defaultCommandTimeout": 10000,
+  "env": {
+    "tmsPrefix": "https://url-to-bug-tracking-system/task-",
+    "issuePrefix": "https://url-to-tms/tests/caseId-"
+  },
+  "video": true,
+  "videoCompression": 32,
+  "videoUploadOnPasses": true,
+  "uploadVideos": true,
+  "recordVideos": true,
+  "videosFolder": "cypress/videos",
+  "projectId": "35ksnn"
+}

@@ -1,0 +1,67 @@
+{
+    "url": "",
+    "eventsURL":"/events/",
+    "eventsButton":{
+        "selector":".znv-d-lg-flex > a[href='/events']"
+       },
+       "eventsPage":"EVENTS",
+      "urlVisible":"https://zwift.com/events",
+
+"sport":{
+"selector":":nth-child(1) > .select-wrapper > #filter-location",
+"label":{
+    "cyclingSelector":":nth-child(2) > .listing-map > .map-title > .map-sport-type",
+    "runningSelector":":nth-child(7) > .listing-map > .map-title > .map-sport-type",
+    "cycling":"CYCLING",
+    "running":"RUNNING"
+},
+"type":{
+"cycling":"Cycling",
+"running":"Running",
+"allSports":"All Sports"
+}
+},
+"event":{
+    "selector":":nth-child(2) > .select-wrapper > #filter-location"
+    },
+    "intensity":{
+        "selector":":nth-child(3) > .select-wrapper > #filter-location",
+
+        "typeB":{
+            "labelSelector":":nth-child(4) > .listing-top > .listing-header > .group-label",
+            "text":"B"
+        },
+        "typeC":{
+            "labelSelector":":nth-child(4) > .listing-top > .listing-header > .group-label",
+            "text":"C"
+        },
+        "typeD":{
+            "labelSelector":":nth-child(4) > .listing-top > .listing-header > .group-label",
+            "text":"D"
+        },
+        "typeE":{
+            "labelSelector":":nth-child(4) > .listing-top > .listing-header > .group-label",
+            "text":"E (Open)"
+        }
+    },
+        "startTime":{
+            "selector":":nth-child(4) > .select-wrapper > #filter-location",
+            "labelSelector":":nth-child(6) > .listing-top > .listing-header > span",
+            "amLabelSelector":":nth-child(21) > .listing-top > .listing-header > span",
+            "pmLabelSelector":":nth-child(175) > .listing-top > .listing-header > span",
+            "allStartTimes":"All Start Times",
+            "moriningText":"Morning",
+            "afternoonText":"Afternoon",
+            "amText":"AM ",
+            "pmText":"PM"
+            },
+            "eventType":{
+                "selector":":nth-child(2) > .select-wrapper > #filter-location",
+                "groupWorkout":"Group Workout",
+                "fondo":"Fondo",
+                "noResults":"No results.",
+                "noResultsSelector":"",
+                "fondoSelector":":nth-child(2) > .listing-top > .listing-header > span"
+            }
+
+}
